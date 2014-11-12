@@ -1,3 +1,10 @@
+//-----------------------------------------------------------------------------
+// (C) Copyright 2007-2014 Denison Linus
+//
+// Author: Denison Linus
+// Email: dlmtavar@gmail.com
+//
+//-----------------------------------------------------------------------------
 #include <cstdio>
 #include "NxPhysics.h"
 #include "CPhysXStream.h"

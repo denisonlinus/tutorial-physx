@@ -1,3 +1,10 @@
+//-----------------------------------------------------------------------------
+// (C) Copyright 2007-2014 Denison Linus
+//
+// Author: Denison Linus
+// Email: dlmtavar@gmail.com
+//
+//-----------------------------------------------------------------------------
 #if defined(WIN32) || defined(WIN64)
 	#define NOMINMAX
 	#include <windows.h>
@@ -13,10 +20,10 @@
 class ControllerManagerAllocator : public NxUserAllocator
 {
 public:
-	virtual void*	mallocDEBUG(size_t size, const char* fileName, int line)	{ return ::malloc(size); }
-	virtual void*	malloc(size_t size)											{ return ::malloc(size); }
-	virtual void*	realloc(void* memory, size_t size)							{ return ::realloc(memory, size); }
-	virtual void	free(void* memory)											{ ::free(memory); }
+	virtual void*	mallocDEBUG(size_t size, const char* fileName, int line)    { return ::malloc(size); }
+	virtual void*	malloc(size_t size)                                         { return ::malloc(size); }
+	virtual void*	realloc(void* memory, size_t size)                          { return ::realloc(memory, size); }
+	virtual void	free(void* memory)                                          { ::free(memory); }
 };
 //-----------------------------------------------------------------------------
 class ControllerHitReport : public NxUserControllerHitReport

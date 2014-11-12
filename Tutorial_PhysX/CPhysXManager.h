@@ -1,3 +1,10 @@
+//-----------------------------------------------------------------------------
+// (C) Copyright 2007-2014 Denison Linus
+//
+// Author: Denison Linus
+// Email: dlmtavar@gmail.com
+//
+//-----------------------------------------------------------------------------
 #ifndef _CPHYSXMANAGER_H_
 #define _CPHYSXMANAGER_H_
 
