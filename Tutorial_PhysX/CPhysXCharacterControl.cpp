@@ -25,10 +25,12 @@ CPhysXCharacterControl::~CPhysXCharacterControl()
 //-----------------------------------------------------------------------------
 void CPhysXCharacterControl::update(f32 elapsedTime)
 {
-	NxActor* actor = Controller->getActor();
-	if(Controller && actor && !actor->isSleeping())
+	if(!Controller) return;
+    
+    NxActor* actor = Controller->getActor();
+	if(actor && !actor->isSleeping())
 	{
-		NxMat34 pose = actor->getGlobalPose();
+        NxMat34 pose = actor->getGlobalPose();
 		const NxVec3 pos = pose.t;
 		const NxMat33 orient = pose.M;
 		core::matrix4 irrMat;
